@@ -12,7 +12,7 @@ app.use(cors({
     methods:["POST"],
     credentials: true, 
 }))
-
+console.log(process.env.FRONTEND_URL);
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use("/api/v1/reservation",reservationRouter);
