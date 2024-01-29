@@ -12,9 +12,11 @@ const About = () => {
                     <p>The only thing we are serious about is food.</p>
                 </div>
                 <p className="mid">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio minima eveniet iste similique eum delectus accusamus corrupti tempore dolorum sit. Cum perferendis quisquam soluta, id nesciunt molestiae culpa laboriosam totam, perspiciatis distinctio tempora explicabo commodi beatae doloribus error ducimus iusto sint laudantium adipisci hic. Delectus deleniti provident magni corporis aliquam?
+                Welcome to Foody Fresh Company, where culinary excellence meets global flavors. With a passion for crafting diverse and delectable dishes, we invite you on a journey of international cuisine. Our commitment to quality ingredients and innovative recipes ensures a dining experience that is fresh, flavorful, and unforgettable.
                 </p>
-                <Link to={"/"}>Explore Menu{" "}
+                <Link to={"/"} onClick={()=>{
+            document.getElementById('menu').scrollIntoView({behaviour: 'smooth'});
+        }}>Explore Menu{" "}
                 <span>
                     <HiOutlineArrowNarrowRight/>
                 </span>

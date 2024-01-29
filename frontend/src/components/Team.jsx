@@ -7,7 +7,7 @@ const Team = () => {
         <div className="container">
             <div className="heading_section">
                 <h1 className='heading'>OUR TEAM</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptates voluptatum rerum quia totam quas expedita molestias quis provident ullam.</p>
+                <p>Our dedicated team, passionate about culinary excellence, collaborates to bring you memorable dining experiences with warmth, expertise, and creativity.</p>
             </div>
             <div className="team_container">
                 {

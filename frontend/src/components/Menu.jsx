@@ -7,7 +7,7 @@ const Menu = () => {
     <div className="container">
         <div className="heading_section">
             <h1 className="heading">POPULAR DISHES</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptatem est voluptatibus quas quos, assumenda pariatur incidunt sequi expedita natus!</p>
+            <p>Discover our culinary gems! From sizzling specialties to timeless classics, our popular dishes promise a delightful feast for every palate.</p>
         </div>
         <div className="dishes_container">
             {data[0].dishes.map((element)=>(
