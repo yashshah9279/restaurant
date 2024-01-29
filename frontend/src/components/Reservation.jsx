@@ -1,6 +1,6 @@
 import React from 'react'
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
-import axios from 'axios'
+import axios from '../Axios.js'
 import { useState } from 'react'
 import toast from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
@@ -17,7 +17,7 @@ const Reservation = () => {
     const handleReservation= async (e)=>{
         e.preventDefault();
      try {
-        const {data}= await axios.post("http://localhost:4000/api/v1/reservation/send",
+        const {data}= await axios.post("/api/v1/reservation/send",
         {firstName,lastName,email,phone,date,time},
         {
             headers:{
