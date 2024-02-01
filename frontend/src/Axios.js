@@ -1,5 +1,5 @@
 import axios from "axios";
 const instance = axios.create({
-    baseURL: '/restaurant-production-d53d.up.railway.app'
+    baseURL: 'https://restaurant-production-3c6a.up.railway.app'
   });
 export default instance
