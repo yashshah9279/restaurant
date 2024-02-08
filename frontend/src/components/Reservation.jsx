@@ -21,7 +21,7 @@ const Reservation = () => {
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json"
           },
           withCredentials: true,
         }
