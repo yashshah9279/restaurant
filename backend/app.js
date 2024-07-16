@@ -7,13 +7,11 @@ import reservationRouter from "./routes/reservationRoute.js";
 const app=express();
 dotenv.config({path: './config/config.env'});
 
-app.use((req,res,next)=>{
-    console.log(req.headers);
-    next();
-})
+
+
 app.use(cors({
     origin: process.env.FRONTEND_URL,
-    methods:["POST", "GET", "OPTIONS"],
+    methods:["POST"],
     credentials: true, 
 }))
 
@@ -22,6 +20,13 @@ app.use(express.json());
 
 app.use(express.urlencoded({extended: true}));
 app.use("/api/v1/reservation",reservationRouter);
+
+app.get("/",(req,res,next)=>{
+    return res.status(200).json({
+        success:true,
+        message: "Hello World"
+    })
+})
 dbConnection();
 
 app.use(errorMiddleware)
